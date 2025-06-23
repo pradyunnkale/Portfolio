@@ -164,7 +164,7 @@ export default function HomePage() {
                 High School Diploma
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed space-y-2">
-                Completed advanced coursework with a 96.8 GPA. Earned A+ in all
+                Completed advanced coursework with a 97.03 GPA. Earned A+ in all
                 12th grade courses, including multiple AP classes in physics,
                 mathematics, and computer science.
               </p>
@@ -461,7 +461,7 @@ export default function HomePage() {
                 </h2>
               </div>
               <p className="text-gray-300 text-lg leading-relaxed space-y-2">
-                96.8 GPA with A+ in all 12th grade courses
+                97.03 GPA with A+ in all 12th grade courses
                 <br />
                 Perfect scores in multiple AP courses
                 <br />
@@ -516,7 +516,7 @@ export default function HomePage() {
               </div>
               <div className="text-gray-300 leading-relaxed flex-1 flex flex-col justify-center">
                 <h3 className="text-white text-4xl font-bold text-center">
-                  96.8
+                  97.03
                 </h3>
                 <p className="text-gray-400 text-sm text-center">Total GPA</p>
               </div>
