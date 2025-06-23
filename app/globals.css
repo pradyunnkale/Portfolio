@@ -79,3 +79,7 @@ p {
   color: hsl(var(--muted-foreground));
   font-family: var(--font-inter-sans), sans-serif;
 }
+
+html, body {
+  overflow-x: hidden;
+}
