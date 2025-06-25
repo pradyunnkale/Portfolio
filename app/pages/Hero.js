@@ -64,7 +64,7 @@ export default function Hero({Name, Body, PictureLink}){
                         md:mb-15
                         md:mt-15
                         mt-4
-                        mb-6
+                        mb-10
                     "
                 />
                 </div>
