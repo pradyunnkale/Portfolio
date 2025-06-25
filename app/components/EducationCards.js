@@ -8,7 +8,7 @@ export default function EducationCards({Name, Date, Title, Body, Badges = []}){
               title={
                 <div className="flex justify-between items-center">
                   <span className="text-[#cfb991]">{Name}</span>
-                  <p className="font-normal text-sm">{Date}</p>
+                  <p className="font-normal text-sm text-right">{Date}</p>
                 </div>
               }
             >
