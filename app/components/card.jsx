@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../globals.css";
 export default function Card({ title, children }) {
   return (
     <div className="w-full bg-hsl(var(--card)) backdrop-blur-md border border-white/20 rounded-2xl shadow-lg p-6 text-gray-300"

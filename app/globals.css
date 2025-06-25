@@ -64,10 +64,20 @@ main > section:nth-child(even) {
 }
 
 .btn-primary {
-  @apply bg-[#c0ac87] hover:bg-[#b3a181] text-white font-bold px-6 py-3 rounded-xl transition;
+  @apply bg-[#c0ac87] hover:bg-[#b3a181] text-white font-bold px-6 py-3 rounded-xl transition inline-flex items-center px-4 py-2;
 }
 .btn-secondary {
-  @apply border border-[#c0ac87] text-[#cfb991] p-6 py-3 rounded-xl hover:bg-[#c0ac87] hover:text-white font-bold transition;
+  @apply border border-[#c0ac87] text-[#cfb991] p-6 py-3 rounded-xl hover:bg-[#c0ac87] hover:text-white font-bold transition inline-flex items-center px-4 py-2;
+}
+
+.btn-icon{
+  @apply inline-flex items-center justify-center p-2 rounded-xl text-[#cfb991] hover:text-[#b3a181] text-xl w-11 h-auto;
+}
+
+.btn-icon svg {
+  width: 2.75rem;   /* same as w-11 */
+  height: auto;
+  display: inline;
 }
 
 h {

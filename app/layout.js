@@ -1,6 +1,6 @@
 'use client';
 import { Inter_Tight, Inter } from "next/font/google";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub} from "react-icons/fa";
 import {LuFileText} from "react-icons/lu";
 import "./globals.css";
 
@@ -17,7 +17,7 @@ const interSans = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`dark ${interSans.variable}`}>
-      <body style={{ backgroundColor: "#0b1223", color: "white" }}>
+      <body style={{ backgroundColor: "#0b1223", color: "white", overflow:'visible' }}>
         <header
           className="sticky top-0 z-10 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-colors duration-300"
           style={{
@@ -26,8 +26,9 @@ export default function RootLayout({ children }) {
             WebkitBackdropFilter: "blur(12px)",
           }}
         >
-          <nav className="flex justify-between items-center p-6 text-white">
-            <div className="flex gap-6 text-medium font-medium items-center">
+          <nav className="flex items-center justify-between overflow-x-auto whitespace-nowrap px-2 py-2 md:px-6 md:py-4">
+           <div className='flex w-full gap-6 flex-row '>
+             <div className="flex gap-6 text-medium font-medium items-center">
               <a href="#hero">
                 <span className="text-2xl font-bold text-[#cfb991] hover:text-[#b3a181]">
                   Pradyunn Kale
@@ -41,7 +42,7 @@ export default function RootLayout({ children }) {
               <a href="#stats" className='font-semibold hover:text-[#cfb991]'>Stats</a>
               <a href="#contact" className='font-semibold hover:text-[#cfb991]'>Contact</a>
             </div>
-            <div className='flex gap-6 items-center'>
+            <div className='flex gap-6 items-center ml-auto'>
               <a href='https://github.com/pradyunnkale' target='_blank' rel='noopener noreferrer'>
                 <FaGithub className='inline w-6 h-6 text-[#cfb991] hover:text-[#b3a181]' />
               </a>
@@ -52,11 +53,12 @@ export default function RootLayout({ children }) {
               <LuFileText className='inline w-6 h-6 text-[#cfb991] hover:text-[#b3a181]' />
               </a>
             </div>
+           </div>
           </nav>
         </header>
         {children}
         <footer className="w-full py-12 md:py-12 lg:py-8" style={{ background: "hsl(var(--background))" }}>
-          <div className='flex gap-6 items-center justify-center gap-6'>
+          <div className='flex gap-6 items-center justify-center gap-6 w-[90%] text-center mx-auto'>
             <div className='flex flex-row justify-center text-center items-center gap-3'>
             <p className='text-md text-[#cfb991]'>© 2025 Pradyunn Kale. All rights reserved.</p>
             <a href='https://github.com/pradyunnkale' target='_blank' rel='noopener noreferrer'>
