@@ -7,7 +7,7 @@ export default function Education({Cards = []}){
             <h1 className="flex-1 flex text-3xl md:text-5xl font-extrabold mb-2 text-[#cfb991] justify-center">
                   Education
                 </h1>
-                <p className="flex-1 flex text-xl font-normal justify-center">
+                <p className="flex-1 flex text-xl font-normal w-[90%] mx-auto justify-center">
                   My academic journey and achievements.
                 </p>
                 <section className="flex flex-col items-center justify-center gap-8 px-4 sm:px-6 py-10">

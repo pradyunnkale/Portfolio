@@ -6,7 +6,7 @@ export default function AboutMe({Introduction, Cards}){
             <h1 className="flex-1 flex text-5xl font-extrabold mb-2 text-[#cfb991] justify-center">
                     About Me
                 </h1>
-                <p className="text-gray-300 text-xl leading-relaxed text-center mx-auto max-w-4xl">
+                <p className="text-gray-300 text-xl leading-relaxed text-center w-[90%] mx-auto max-w-4xl">
                   {Introduction}
                 </p>
                 <section className="flex flex-wrap justify-center gap-8 px-6 py-10">

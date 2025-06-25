@@ -53,7 +53,15 @@ export default function Hero({Name, Body, PictureLink}){
                     alt=""
                     width={700}
                     height={700}
-                    className='mx-auto aspect-square overflow-hidden rounded-xl object-cover w-[700px]'
+                    className="
+                        mx-auto
+                        aspect-square
+                        overflow-hidden
+                        rounded-xl
+                        object-cover
+                        w-full
+                        max-w-[700px]
+                    "
                 />
                 </div>
             </div>
