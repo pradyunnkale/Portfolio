@@ -15,51 +15,47 @@ export default function Achievements(){
           Recognitions and accomplishments from my academic and extracurricular
           activies.
         </p>
-        <section className="flex flex-wrap justify-center gap-8 px-6 py-10">
-          <div className="md:w-[35%] items-left">
-            <Card>
-              <div className="flex item-center mb-2">
-                <LuAward className="text-3xl text-[#cfb991] mr-2" />
-                <h2 className="flex-1 text-center text-xl font-bold">
-                  Academic Excellence
-                </h2>
-              </div>
-              <p className="text-gray-300 text-lg leading-relaxed space-y-2">
-                97% GPA with A+ in all 12th grade courses
-                <br />
-                Perfect scores in multiple AP courses
-                <br />
-                Scholarship recipient at Harvard Extension School
-                <br />
-                Self-studying Multivariable Calculus
-                <br />
-                Excellence in advanced physics and mathematics
-                <br />
-              </p>
-            </Card>
-          </div>
-          <div className="md:w-[35%]">
-            <Card>
-              <div className="flex item-center mb-2">
-                <RxLightningBolt className="text-3xl text-[#cfb991] mr-2" />
-                <h2 className="flex-1 text-center text-xl font-bold">
-                  Engineering & Athletics
-                </h2>
-              </div>
-              <p className="text-gray-300 text-lg leading-relaxed space-y-2">
-                FIRST Robotics Competition participant
-                <br />
-                Designed and built an electromagnetic ion thruster
-                <br />
-                Varsity athlete in football, wrestling, and rugby
-                <br />
-                Strong collaborator in robotics team development
-                <br />
-                Advanced engineering project experience
-                <br />
-              </p>
-            </Card>
-          </div>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 py-10 items-stretch">
+          <Card className="flex flex-col h-full">
+            <div className="flex items-center mb-2">
+              <LuAward className="text-3xl text-[#cfb991] mr-2" />
+              <h2 className="flex-1 text-center text-xl font-bold">
+                Academic Excellence
+              </h2>
+            </div>
+            <p className="text-gray-300 text-lg leading-relaxed space-y-2">
+              97% GPA with A+ in all 12th grade courses
+              <br />
+              Perfect scores in multiple AP courses
+              <br />
+              Scholarship recipient at Harvard Extension School
+              <br />
+              Self-studying Multivariable Calculus
+              <br />
+              Excellence in advanced physics and mathematics
+              <br />
+            </p>
+          </Card>
+          <Card className="flex flex-col h-full">
+            <div className="flex items-center mb-2">
+              <RxLightningBolt className="text-3xl text-[#cfb991] mr-2" />
+              <h2 className="flex-1 text-center text-xl font-bold">
+                Engineering & Athletics
+              </h2>
+            </div>
+            <p className="text-gray-300 text-lg leading-relaxed space-y-2">
+              FIRST Robotics Competition participant
+              <br />
+              Designed and built an electromagnetic ion thruster
+              <br />
+              Varsity athlete in football, wrestling, and rugby
+              <br />
+              Strong collaborator in robotics team development
+              <br />
+              Advanced engineering project experience
+              <br />
+            </p>
+          </Card>
         </section>
         </div>
     );

@@ -16,7 +16,7 @@ export default function Hero({Name, Body, PictureLink}){
                     {Body}
                 </p>
                 <div className='flex gap-4 md:flex-wrap lg:flex-row flex-col text-center md:text-left'>
-                    <div className='flex flex-row gap-4'>
+                    <div className='flex flex-row gap-4 mx-auto md:mx-0'>
                         <Button
                         Name='Contact Me'
                         Landing='#contact'

@@ -10,7 +10,7 @@ export default function Education({Cards = []}){
                 <p className="flex-1 flex text-xl font-normal w-[90%] mx-auto text-center justify-center">
                   My academic journey and achievements.
                 </p>
-                <section className="flex flex-col items-center justify-center gap-8 px-4 sm:px-6 py-10">
+                <section className="grid grid-cols-1 gap-6 px-4 sm:px-6 py-10 items-stretch">
                 {Cards.map((card, idx) => (
                 <EducationCards
                     key={idx}

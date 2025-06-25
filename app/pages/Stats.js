@@ -11,9 +11,9 @@ export default function Stats(){
             <p className="text-gray-300 text-xl leading-relaxed text-center mx-auto max-w-4xl">
               Key metrics and statistics from my academic performance.
             </p>
-            <section className="flex flex-wrap justify-center gap-8 px-6 py-10">
-              <div className="flex flex-row flex-wrap justify-center items-stretch w-full gap-8">
-                <div className="w-full sm:w-[45%] md:w-[20%] rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col">
+            <section className="px-6 py-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div className="rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col">
                   <div className="bg-[#cfb991] text-black text-center font-bold text-3xl py-4">
                     GPA
                   </div>
@@ -30,7 +30,7 @@ export default function Stats(){
                     </div>
                   </div>
                 </div>
-                <div className="w-full sm:w-[45%] md:w-[20%] rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col">
+                <div className="rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col">
                   <div className="bg-[#cfb991] text-black text-center font-bold text-3xl py-4">
                     SAT Score
                   </div>
@@ -53,7 +53,7 @@ export default function Stats(){
                     </div>
                   </div>
                 </div>
-                <div className="w-full sm:w-[45%] md:w-[20%] rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col">
+                <div className="rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col">
                   <div className="bg-[#cfb991] text-black text-center font-bold text-3xl py-4">
                     AP Courses
                   </div>
@@ -80,7 +80,7 @@ export default function Stats(){
                     </div>
                   </div>
                 </div>
-                <div className="w-full sm:w-[45%] md:w-[20%] rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col">
+                <div className="rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col">
                   <div className="bg-[#cfb991] text-black text-center font-bold text-3xl py-4">
                     College Prep
                   </div>
@@ -97,48 +97,50 @@ export default function Stats(){
                     </div>
                   </div>
                 </div>
-                <div className="md:w-[60%]">
-                  <Card className="w-[80%] sm:w-[45%] md:w-[20%] rounded-2xl border border-white/10 bg-[hsl(var(--card))]/70 shadow-lg backdrop-blur overflow-hidden flex flex-col text-center">
-                    <h2 className="font-bold text-3xl text-[#cfb991] py-4">
-                      Advanced Coursework
-                    </h2>
-                    <div className="flex flex-col sm:flex-row justify-center items-center p-6 gap-10">
-                      <div className="flex flex-col items-center mb-4">
-                        <h3 className="font-bold mb-2 text-xl">Mathematics</h3>
-                        <p className="text-gray-400 text-sm text-center leading-relaxed">
-                          Multivariable Calculus
-                          <br />
-                          Linear Algebra & Differential Equations
-                          <br />
-                          AP Statistics
-                          <br />
-                        </p>
-                      </div>
-                      <div className="flex flex-col items-center mb-4">
-                        <h3 className="font-bold mb-2 text-xl">
-                          Science & Engineering
-                        </h3>
-                        <p className="text-gray-400 text-sm text-center leading-relaxed">
-                          AP Physics C: Mechanics and E&M
-                          <br />
-                          AP Chemistry
-                          <br />
-                          Engineering III
-                          <br />
-                        </p>
-                      </div>
-                      <div className="flex flex-col items-center mb-4">
-                        <h3 className="font-bold mb-2 text-xl">Computer Science</h3>
-                        <p className="text-gray-400 text-sm text-center leading-relaxed">
-                          Intro to Computer Science (Harvard)
-                          <br />
-                          AP Computer Science A<br />
-                          Hands On Programming With Arduinos
-                          <br />
-                        </p>
-                      </div>
+              </div>
+              <div className="grid grid-cols-1 justify-center">
+                <div className="max-w-4xl mx-auto">
+                <Card>
+                  <h2 className="font-bold text-3xl text-[#cfb991] py-4">
+                    Advanced Coursework
+                  </h2>
+                  <div className="flex flex-col sm:flex-row justify-center items-center p-6 gap-10">
+                    <div className="flex flex-col items-center mb-4">
+                      <h3 className="font-bold mb-2 text-xl">Mathematics</h3>
+                      <p className="text-gray-400 text-sm text-center leading-relaxed">
+                        Multivariable Calculus
+                        <br />
+                        Linear Algebra & Differential Equations
+                        <br />
+                        AP Statistics
+                        <br />
+                      </p>
                     </div>
-                  </Card>
+                    <div className="flex flex-col items-center mb-4">
+                      <h3 className="font-bold mb-2 text-xl">
+                        Science & Engineering
+                      </h3>
+                      <p className="text-gray-400 text-sm text-center leading-relaxed">
+                        AP Physics C: Mechanics and E&M
+                        <br />
+                        AP Chemistry
+                        <br />
+                        Engineering III
+                        <br />
+                      </p>
+                    </div>
+                    <div className="flex flex-col items-center mb-4">
+                      <h3 className="font-bold mb-2 text-xl">Computer Science</h3>
+                      <p className="text-gray-400 text-sm text-center leading-relaxed">
+                        Intro to Computer Science (Harvard)
+                        <br />
+                        AP Computer Science A<br />
+                        Hands On Programming With Arduinos
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                </Card>
                 </div>
               </div>
             </section>

@@ -14,9 +14,9 @@ export default function Contact(){
                 Interested in connecting or collaborating? Feel free to reach out!
                 </p>
             </div>
-            <div className='flex flex-wrap sm:flex-row justify-center gap-4'>
-            <div className='w-full sm:w-[90%] md:w-[39%] mb-2'>
-                <Card>
+            <div className='w-full sm:w-[90%] grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto md:items-stretch'>
+            <div className='flex flex-col'>
+                <Card className = 'h-full flex flex-col'>
                 <h1 className="flex-1 flex text-2xl font-bold mb-2 text-[#cfb991]">
                     Send me a message
                 </h1>
@@ -24,7 +24,7 @@ export default function Contact(){
                     Fill out the form below and I&apos;ll get back to you as soon as
                     possible.
                 </p>
-                <form className="flex flex-col gap-4"
+                <form className="flex flex-col gap-4 flex-grow"
                 onSubmit={async (e) => {
                     e.preventDefault();
                     const form = e.target;
@@ -54,7 +54,7 @@ export default function Contact(){
                         id="name"
                         name="name"
                         placeholder="Your full name"
-                        className="rounded-md px-3 py-2 bg-[#181c2b] text-white border border-gray-800 focus:outline-none focus:ring-2 focus:ring-[#cfb991]mb-2"
+                        className="rounded-md px-3 py-2 bg-[#181c2b] w-full text-white border border-gray-800 focus:outline-none focus:ring-2 focus:ring-[#cfb991]mb-2"
                         required
                         />
                     </div>
@@ -65,7 +65,7 @@ export default function Contact(){
                         id="email"
                         name="email"
                         placeholder="your.email@example.com"
-                        className="rounded-md px-3 py-2 bg-[#181c2b] text-white border border-gray-800 focus:outline-none focus:ring-2 focus:ring-[#cfb991] mb-2"
+                        className="rounded-md px-3 py-2 bg-[#181c2b] w-full text-white border border-gray-800 focus:outline-none focus:ring-2 focus:ring-[#cfb991] mb-2"
                         required
                         />
                     </div>
@@ -81,13 +81,13 @@ export default function Contact(){
                         required
                     />
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col flex-grow">
                     <label htmlFor="message" className="mb-1 font-semibold text-white mb-2">Message *</label>
                     <textarea
                         id="message"
                         name="message"
                         placeholder="Tell me about your project or inquiry..."
-                        className="rounded-md px-3 py-2 bg-[#181c2b] text-white border border-gray-800 focus:outline-none focus:ring-2 focus:ring-[#cfb991] min-h-[100px] mb-2"
+                        className="rounded-md px-3 py-2 bg-[#181c2b] text-white border border-gray-800 focus:outline-none focus:ring-2 focus:ring-[#cfb991] min-h-[100px] mb-2 flex-grow resize-none"
                         required
                     />
                     </div>
@@ -100,41 +100,41 @@ export default function Contact(){
                 </form>
                 </Card>
             </div>
-            <div className='w-full sm:w-[90%] md:w-[45%] mb-4'>
-                <div className='md:w-[100%]'>
-                <Card>
-                    <h1 className="flex-1 flex text-2xl font-bold mb-2 text-[#cfb991]">
+            <div className='flex flex-col h-full gap-4'>
+                <Card className='flex-[1_1_50%] flex flex-col'>
+                    <h1 className="flex text-2xl font-bold mb-2 text-[#cfb991]">
                     Contact Information
                     </h1>
                     <p className='text-left mb-6'>
                     Here are the best ways to reach me directly.
                     </p>
-                    <div className='flex flex-row text-left mb-4 items-center'>
-                    <FaEnvelope className="text-3xl text-[#cfb991] mr-4" />
-                    <div className='flex flex-col'>
-                        <h2 className='font-bold text-lg'>Email</h2>
-                        <p>kalepradyunn@gmail.com</p>
-                    </div>
-                    </div>
-                    <div className='flex flex-row text-left mb-4 items-center'>
-                    <FaPhoneSquareAlt className="text-3xl text-[#cfb991] mr-4" />
-                    <div className='flex flex-col'>
-                        <h2 className='font-bold text-lg'>Phone</h2>
-                        <p>+1 (617) 256 8890</p>
-                    </div>
-                    </div>
-                    <div className='flex flex-row text-left mb-4 items-center'>
-                    <FaLocationDot className="text-3xl text-[#cfb991] mr-4" />
-                    <div className='flex flex-col'>
-                        <h2 className='font-bold text-lg'>Location</h2>
-                        <p>Cambridge, MA</p>
-                    </div>
+                    <div className='flex-grow flex flex-col justify-center space-y-4'>
+                        <div className='flex flex-row text-left items-center'>
+                        <FaEnvelope className="text-3xl text-[#cfb991] mr-4" />
+                        <div className='flex flex-col'>
+                            <h2 className='font-bold text-lg'>Email</h2>
+                            <p>kalepradyunn@gmail.com</p>
+                        </div>
+                        </div>
+                        <div className='flex flex-row text-left items-center'>
+                        <FaPhoneSquareAlt className="text-3xl text-[#cfb991] mr-4" />
+                        <div className='flex flex-col'>
+                            <h2 className='font-bold text-lg'>Phone</h2>
+                            <p>+1 (617) 256 8890</p>
+                        </div>
+                        </div>
+                        <div className='flex flex-row text-left items-center'>
+                        <FaLocationDot className="text-3xl text-[#cfb991] mr-4" />
+                        <div className='flex flex-col'>
+                            <h2 className='font-bold text-lg'>Location</h2>
+                            <p>Cambridge, MA</p>
+                        </div>
+                        </div>
                     </div>
                 </Card>
-                <div className="mb-4"/>
-                <Card>
-                    <h1 className='flex-1 flex text-2xl font-bold mb-2 text-[#cfb991] mb-3'>Availability</h1>
-                    <div className="space-y-2">
+                <Card className='flex-[1_1_50%] flex flex-col'>
+                    <h1 className='flex text-2xl font-bold mb-2 text-[#cfb991] mb-3'>Availability</h1>
+                    <div className="flex-grow flex flex-col justify-start space-y-4">
                     <div className="flex justify-between items-center">
                         <h2 className="font-bold text-lg">Response Time</h2>
                         <p>Within 24 hours</p>
@@ -152,7 +152,6 @@ export default function Contact(){
                     </div>
                 </Card>
                 </div>
-            </div>
             </div>
             </div>
     );
