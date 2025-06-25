@@ -3,8 +3,8 @@ import ProjectCards from '../components/ProjectCards'
 
 export default function Projects({PastProjects= [], CurrentProjects = [], FutureProjects = []}){
     return(
-        <div className='flex flex-col justify-center w-[90%] mx-auto'>
-        <h1 className="flex-1 flex text-5xl font-extrabold mb-2 text-[#cfb991] justify-center">
+        <div className='flex flex-col justify-center w-[90%] mx-auto text-center'>
+        <h1 className="flex-1 flex text-5xl font-extrabold mb-2 text-[#cfb991] w-[90%] mx-auto justify-center">
           Past Projects
         </h1>
         <p className="text-gray-300 text-xl leading-relaxed text-center w-[90%] mx-auto  max-w-4xl">

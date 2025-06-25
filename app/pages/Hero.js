@@ -9,13 +9,13 @@ export default function Hero({Name, Body, PictureLink}){
     return(
             <div className='flex flex-col md:flex-row items-center w-full'>
                 <div className='flex flex-1 flex-col min-w-0'>
-                    <h1 className='flex-1 text-center md:text-left text-5xl font-extrabold mb-4'>
+                    <h1 className='flex-1 text-center md:text-left text-5xl font-extrabold mb-4 mt-20 md:mt-0'>
                     Hi, I&apos;m <span className='text-[#cfb991]'>{Name}</span>
                 </h1>
                 <p className='text-lg mb-6 text-center md:text-left'>
                     {Body}
                 </p>
-                <div className='flex gap-4 md:flex-wrap lg:flex-row flex-col text-center md:text-left mb-4'>
+                <div className='flex gap-4 md:flex-wrap lg:flex-row flex-col text-center md:text-left'>
                     <div className='flex flex-row gap-4'>
                         <Button
                         Name='Contact Me'
@@ -61,6 +61,10 @@ export default function Hero({Name, Body, PictureLink}){
                         object-cover
                         w-full
                         max-w-[700px]
+                        md:mb-15
+                        md:mt-15
+                        mt-4
+                        mb-6
                     "
                 />
                 </div>

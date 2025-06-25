@@ -1,7 +1,4 @@
 "use client";
-import Card from "./components/card";
-import { FaEnvelope, FaPhoneSquareAlt} from "react-icons/fa";
-import {FaLocationDot} from "react-icons/fa6"
 import Hero from './pages/Hero'
 import AboutMe from './pages/AboutMe'
 import Education from './pages/Education'
@@ -15,7 +12,7 @@ import Contact from './pages/Contact'
 export default function HomePage() {
   return (
     <main>
-      <section id="hero" className="h-screen flex items-center px-8 ">
+      <section id="hero" className="h-auto flex items-center px-8 ">
         <Hero
           Name={'Pradyunn Kale'}
           Body={'First Year Engineering Student @ Purdue University with an interest in aerospace and controls.'}
