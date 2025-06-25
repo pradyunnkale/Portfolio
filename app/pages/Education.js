@@ -3,7 +3,7 @@ import EducationCards from '../components/EducationCards'
 
 export default function Education({Cards = []}){
     return(
-        <div>
+        <div className='w-[90%] mx-auto flex flex-col'>
             <h1 className="flex-1 flex text-3xl md:text-5xl font-extrabold mb-2 text-[#cfb991] justify-center">
                   Education
                 </h1>

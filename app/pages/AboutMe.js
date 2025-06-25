@@ -2,7 +2,7 @@
 import Card from "../components/card";
 export default function AboutMe({Introduction, Cards}){
     return(
-        <div>
+        <div className='w-[90%] mx-auto'>
             <h1 className="flex-1 flex text-5xl font-extrabold mb-2 text-[#cfb991] justify-center">
                     About Me
                 </h1>
