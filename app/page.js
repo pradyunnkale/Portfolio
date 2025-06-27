@@ -52,15 +52,14 @@ export default function HomePage() {
       >
         <Projects
         PastProjects={[
-          {Title:'Yet to add, will add when I am reminded of what projects I have done'}
+          {Title:'None worth mentioning yet'}
         ]}
         CurrentProjects={[
-          {Title:'Self Balancing Robot',Body:'Builing a two-wheeled robot that uses gyroscope and accelerometer data to maintain its balance in real-time through motor control. This project demonstrates embedded systems skills and hands-on hardware control with sensors and actuators.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware']},
-          {Title:'Carousel Phone Cubby & Charger',Body:'CAD modelling and designing a carosuel which is controller by a stepper motor with security features. Asks for a code input to store phone, then code can later be used to retrieve the phone. Also uses induction to wirelessly charge phones.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software']}
+          {Title:'Carousel Phone Cubby & Charger',Body:'CAD modelling and designing a carosuel which is controller by a stepper motor with security features. Asks for a code input to store phone, then code can later be used to retrieve the phone. Also uses induction to wirelessly charge phones.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Group']},
+          {Title:'Autonomous Drone Control System',Body:'Autonomous quadcopter with computer vision, SLAM navigation, and reinforcement learning control. Built in Gazebo simulation using ROS2 and PX4 autopilot firmware.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Solo']}
         ]}
         FutureProjects={[
-          {Title:'NASA API Data Dashboard',Body:'Create an interactive dashboard that fetches and visualizes real-time space-related data from NASA’s public APIs using Python or web technologies. This project highlights your software development skills, API integration, and data visualization abilities.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Software']},
-          {Title:'Rocket Avionics Simulator',Body:'Develop a flight computer simulator that reads sensor data to detect rocket flight phases and triggers actuators like a servo to deploy a parachute. This project combines embedded programming, sensor fusion, and control logic relevant to aerospace systems.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software']}
+          {Title:'Nothing in store as this current project is BIG.'}
         ]}
         >
         </Projects>
