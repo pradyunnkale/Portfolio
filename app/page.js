@@ -56,7 +56,7 @@ export default function HomePage() {
         ]}
         CurrentProjects={[
           {Title:'Carousel Phone Cubby & Charger',Body:'CAD modelling and designing a carosuel which is controller by a stepper motor with security features. Asks for a code input to store phone, then code can later be used to retrieve the phone. Also uses induction to wirelessly charge phones.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Group']},
-          {Title:'Autonomous Drone Control System',Body:'Autonomous quadcopter with computer vision, SLAM navigation, and reinforcement learning control. Built in Gazebo simulation using ROS2 and PX4 autopilot firmware.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Solo']}
+          {Title:'Autonomous Drone Control System',Body:'Autonomous quadcopter with computer vision, SLAM navigation, and reinforcement learning control. Built in Gazebo simulation using ROS2 and PX4 autopilot firmware.',GitHub:'https://github.com/pradyunnkale/Autonomous-Drone-Control-System',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Solo']}
         ]}
         FutureProjects={[
           {Title:'Nothing in store as this current project is BIG.'}
