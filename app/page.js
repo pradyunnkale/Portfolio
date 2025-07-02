@@ -15,7 +15,7 @@ export default function HomePage() {
       <section id="hero" className="h-auto flex items-center px-8 ">
         <Hero
           Name={'Pradyunn Kale'}
-          Body={'First Year Engineering Student @ Purdue University with an interest in aerospace and controls.'}
+          Body={'First Year Engineering Student @ Purdue University with an interest in embedded systems and AI.'}
           PictureLink={'/assets/profile.jpeg'}
         ></Hero>
       </section>
@@ -56,7 +56,8 @@ export default function HomePage() {
         ]}
         CurrentProjects={[
           {Title:'Carousel Phone Cubby & Charger',Body:'CAD modelling and designing a carosuel which is controller by a stepper motor with security features. Asks for a code input to store phone, then code can later be used to retrieve the phone. Also uses induction to wirelessly charge phones.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Group']},
-          {Title:'Autonomous Drone Control System',Body:'Autonomous quadcopter with computer vision, SLAM navigation, and reinforcement learning control. Built in Gazebo simulation using ROS2 and PX4 autopilot firmware.',GitHub:'https://github.com/pradyunnkale/Autonomous-Drone-Control-System',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Solo']}
+          {Title:'Custom Edge AI Vision Platform',
+            Body:'Designed and built a low-power vision system using an STM32H7 microcontroller and OV2640 camera. Runs a quantized YOLOv5n model with FreeRTOS for real-time object detection at 10 FPS. Includes custom PCB design, optimized AI kernels using ARM NEON, and dynamic power scaling. Packaged in a 3D-printed case with mobile app for live video and detection overlay.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Solo']}
         ]}
         FutureProjects={[
           {Title:'Nothing in store as this current project is BIG.'}
