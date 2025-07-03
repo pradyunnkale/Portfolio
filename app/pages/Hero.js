@@ -51,8 +51,8 @@ export default function Hero({Name, Body, PictureLink}){
                 <Image
                     src={PictureLink}
                     alt=""
-                    width={700}
-                    height={700}
+                    width={2000}
+                    height={2000}
                     className="
                         mx-auto
                         aspect-square
