@@ -4,7 +4,7 @@ import Badge from './badge'
 
 export default function ProjectCards({ Title, Body, GitHub, Video, Badges = []}) {
     return (
-      <Card className="flex flex-col h-full">
+      <Card className="flex flex-col h-full max-w-2xl">
         <Image
           src="/assets/self-balancing-robot.jpg"
           alt=""

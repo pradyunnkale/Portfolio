@@ -1,12 +1,7 @@
 "use client";
 import Hero from './pages/Hero'
-import AboutMe from './pages/AboutMe'
-import Education from './pages/Education'
 import Projects from './pages/Projects'
-import Skills from './pages/Skills'
-import Achievements from './pages/Achievements'
-import Stats from './pages/Stats'
-import Contact from './pages/Contact'
+import Awards from './pages/Awards'
 
 
 export default function HomePage() {
@@ -15,49 +10,20 @@ export default function HomePage() {
       <section id="hero" className="h-auto flex items-center px-8 ">
         <Hero
           Name={'Pradyunn Kale'}
-          Body={'First Year Engineering Student @ Purdue University with an interest in embedded systems and AI.'}
+          Body={'Electrical Engineering Student @ Purdue | Specializing in Embedded Systems & Computer Architecture'}
           PictureLink={'/assets/profile.jpeg'}
         ></Hero>
-      </section>
-      <section
-        id="about"
-        className="w-full py-12 md:py-24 lg:py-24 bg-muted/50"
-      >
-        <AboutMe
-         Introduction='I&apos;m an engineering student at Purdue University with a deep passion for physics, 
-         mathematics, and computer science. With a strong foundation in problem-solving and curiosity-driven learning, 
-         I&apos;m driven to design and build systems that make a real-world impact.'
-         Cards={[
-          {title: 'Interests', body: 'My interests lie at the intersection of aerospace engineering, control systems, and robotics. I\'m fascinated by how these disciplines converge to enable intelligent machines, autonomous vehicles, and next-generation spacecraft.'},
-          {title: 'Goals', body: 'I aim to advance the field of aerospace by developing technologies that expand our capabilities in space exploration, autonomous systems, and flight dynamics. Whether through research or hands-on projects, I want to push the frontiers of what\'s possible.'}
-         ]}
-        >
-        </AboutMe>
-      </section>
-      <section
-        id="education"
-        className="w-full py-12 md:py-24 lg:py-24 bg-muted/50"
-      >
-        <Education 
-          Cards={[
-            {Name:'Purdue University',Date:'Starting Fall 2025',Title:'Bachelor of Science in Engineering',Body:'Looking foward to specializing in aerospace and controls.',Badges:['Undergraduate Degree', 'Engineering', 'Co-op Program', 'STEM']},
-            {Name:'Harvard Extension School',Date:'2024 - 2025',Title:'College Courses',Body:'Took college classes while still in high school. Received scholarships for academic excellence.',Badges:['Intro to Computer Science (Grade: A)', 'Linear Algebra & Differential Equations (Grade: B)', 'Scholarship Receipient ($3150 USD)']},
-            {Name:'Cambridge Rindge & Latin School',Date:'2023 - 2025',Title:'High School Diploma',Body:'Completed advanced coursework with a 97% GPA. Earned A+ in all 12th grade courses, including multiple AP classes in physics, mathematics, and computer science.',Badges:['AP Physics C', 'Multivariable Calculus', 'AP Computer Science A']}
-          ]}
-        ></Education>
       </section>
       <section
         id="projects"
         className="w-full py-12 md:py-24 lg:py-24 bg-muted/50"
       >
         <Projects
-        PastProjects={[
-          {Title:'None worth mentioning yet'}
+        WorkExperience={[
+          {Title:'Purdue Space Program (SEDS Chapter) — Liquids Copperhead Rocket | Avionics Engineer', Body:'Contributed to the development of embedded drivers for the Copperhead rocket project. Successfully implemented the ADC (Analog-to-Digital Converter) driver to enable precise sensor data acquisition. Currently developing the Ethernet transceiver driver to support reliable communication. Upcoming work includes writing the driver for the magnetometer to enhance navigation and orientation capabilities.', GitHub:'https://github.com/pradyunnkale/ADS1158_Driver', Badges:['Hardware', 'Software', 'Team']},
         ]}
         CurrentProjects={[
-          {Title:'Carousel Phone Cubby & Charger',Body:'CAD modelling and designing a carosuel which is controller by a stepper motor with security features. Asks for a code input to store phone, then code can later be used to retrieve the phone. Also uses induction to wirelessly charge phones.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Group']},
-          {Title:'Custom Edge AI Vision Platform',
-            Body:'Designed and built a low-power vision system using an STM32H7 microcontroller and OV2640 camera. Runs a quantized YOLOv5n model with FreeRTOS for real-time object detection at 10 FPS. Includes custom PCB design, optimized AI kernels using ARM NEON, and dynamic power scaling. Packaged in a 3D-printed case with mobile app for live video and detection overlay.',GitHub:'https://github.com/pradyunnkale',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Solo']}
+          {Title:'3D Holographic Display',Body:'Creating a prototype of a holographic display that integrates embedded systems, optical components, and real-time image rendering. The project emphasizes hardware-software co-design to enable volumetric visualizations and precise control of display hardware.',GitHub:'https://github.com/pradyunnkale/3DHolographicDisplay',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Solo']},
         ]}
         FutureProjects={[
           {Title:'Nothing in store as this current project is BIG.'}
@@ -66,28 +32,10 @@ export default function HomePage() {
         </Projects>
       </section>
       <section
-        id="skills"
+        id="awards"
         className="w-full py-12 md:py-24 lg:py-24 bg-muted/50"
       >
-        <Skills></Skills>
-      </section>
-      <section
-        id="achievements"
-        className="w-full py-12 md:py-24 lg:py-24 bg-muted/50"
-      >
-        <Achievements></Achievements>
-      </section>
-      <section
-        id="stats"
-        className="w-full py-12 md:py-24 lg:py-24 bg-muted/50"
-      >
-        <Stats></Stats>
-      </section>
-      <section
-        id="contact"
-        className="w-full py-12 md:py-24 lg:py-24 bg-muted/50"
-      >
-        <Contact></Contact>
+        <Awards></Awards>
       </section>
     </main>
   );

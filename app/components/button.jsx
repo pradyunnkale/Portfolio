@@ -10,7 +10,7 @@ export default function Button({Name, Landing, Type, external = false, Icon}){
             rel='noopener noreferrer'
           >
             {Icon && <span className='flex-wrap mr-2 flex-row'>{Icon}</span>}
-            {Name}
+            <span className="font-mono text-2xl font-bold">{Name}</span>
           </a>  
         );
     }

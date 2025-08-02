@@ -74,27 +74,27 @@ const renderProjectCards = (projects) => {
   }
 };
 
-export default function Projects({PastProjects = [], CurrentProjects = [], FutureProjects = []}){
+export default function Projects({WorkExperience = [], CurrentProjects = [], FutureProjects = []}){
     return(
         <div className='flex flex-col justify-center w-[90%] mx-auto text-center'>
         
-        {/*<h1 className="flex-1 flex text-5xl font-extrabold mb-2 text-[#cfb991] w-[90%] mx-auto justify-center">
-          Past Projects
+        <h1 className="flex-1 flex text-5xl font-extrabold mb-2 text-[#cfb991] w-[90%] mx-auto justify-center">
+          Work Experience/Project Teams
         </h1>
         <p className="text-gray-300 text-xl leading-relaxed text-center w-[90%] mx-auto  max-w-4xl">
-          Past projects I have done.
+          Professional and team-based projects.
         </p>
-        <section className={getGridClasses(PastProjects.length)}>
-          {renderProjectCards(PastProjects)}
-        </section>*/}
+        <section className="flex flex-wrap justify-center gap-6 mx-auto max-w-4xl m-8 mb-16">
+          {renderProjectCards(WorkExperience)}
+        </section>
         
         <h1 className="flex-1 flex text-5xl font-extrabold mb-2 w-[90%] mx-auto text-[#cfb991] justify-center">
           Current Projects
         </h1>
         <p className="text-gray-300 text-xl leading-relaxed text-center w-[90%] mx-auto  max-w-4xl">
-          Projects I am currently working on.
+          Projects I'm actively working on or have recently developed.
         </p>
-        <section className={getGridClasses(CurrentProjects.length)}>
+        <section className="flex flex-wrap justify-center gap-6 mx-auto max-w-4xl m-8">
           {renderProjectCards(CurrentProjects)}
         </section>
         
