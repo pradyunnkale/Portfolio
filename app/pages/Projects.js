@@ -92,7 +92,7 @@ export default function Projects({WorkExperience = [], CurrentProjects = [], Fut
           Current Projects
         </h1>
         <p className="text-gray-300 text-xl leading-relaxed text-center w-[90%] mx-auto  max-w-4xl">
-          Projects I'm actively working on or have recently developed.
+          Projects I&apos;m actively working on or have recently developed.
         </p>
         <section className="flex flex-wrap justify-center gap-6 mx-auto max-w-4xl m-8">
           {renderProjectCards(CurrentProjects)}
