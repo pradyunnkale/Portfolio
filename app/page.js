@@ -20,7 +20,7 @@ export default function HomePage() {
       >
         <Projects
         WorkExperience={[
-          {Title:'Purdue Space Program (SEDS Chapter) — Liquids Copperhead Rocket | Avionics Engineer', Body:'Contributed to the development of embedded drivers for the Copperhead rocket project. Successfully implemented the ADC (Analog-to-Digital Converter) driver to enable precise sensor data acquisition. Currently developing the Ethernet transceiver driver to support reliable communication. Upcoming work includes writing the driver for the magnetometer to enhance navigation and orientation capabilities.', GitHub:'https://github.com/pradyunnkale/ADS1158_Driver', Badges:['Hardware', 'Software', 'Team']},
+          {Title:'Purdue Space Program (SEDS Chapter) — Liquids Copperhead Rocket | Avionics Engineer', Body:'Contributed to the development of embedded drivers for the Copperhead rocket project. Successfully implemented the ADC (Analog-to-Digital Converter) and Ethernet transceiver drivers to enable precise sensor data acquisition and reliable communication. Currently developing the driver for the magnetometer to enhance navigation and orientation capabilities.', GitHub:'https://github.com/pradyunnkale/copperhead_flight_sw', Badges:['Hardware', 'Software', 'Team']},
         ]}
         CurrentProjects={[
           {Title:'3D Holographic Display',Body:'Creating a prototype of a holographic display that integrates embedded systems, optical components, and real-time image rendering. The project emphasizes hardware-software co-design to enable volumetric visualizations and precise control of display hardware.',GitHub:'https://github.com/pradyunnkale/3DHolographicDisplay',Video:'https://youtube.com',Badges:['Hardware', 'Software', 'Solo']},
