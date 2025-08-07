@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         {/* Header */}
         <header className="fixed top-0 left-0 w-full px-8 py-4 z-50 flex justify-between items-center backdrop-blur bg-white/5 border-b border-white/10">
           <h1 className="text-xl font-bold transition-transform duration-200 hover:scale-110 hover:text-gray-300 mr-6"><button data-scroll="hero">Pradyunn Kale</button></h1>
-          <nav className="flex gap-6 text-sm font-medium overflow-x-auto scrollbar-hide whitespace-nowrap">
+          <nav className="flex gap-6 text-sm font-medium overflow-x-auto scrollbar-hide whitespace-nowrap pl-1 pr-1">
             <button data-scroll="experience" className="transition-transform duration-200 hover:scale-110 font-semibold hover:text-gray-300">Experience</button>
             <button data-scroll="projects" className="transition-transform duration-200 hover:scale-110 font-semibold hover:text-gray-300">Projects</button>
             <button data-scroll="awards" className="transition-transform duration-200 hover:scale-110 font-semibold hover:text-gray-300">Awards</button>
@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
 
         {/* Main content */}
         <main className="pt-32 space-y-32">
-          <section id="hero" className="px-8 max-w-5xl mx-auto scroll-mt-24" role="banner">
+          <section id="hero" className="px-8 max-w-5xl mx-auto scroll-mt-32" role="banner">
             <div className="flex flex-wrap items-center gap-4">
               <h1 className="text-5xl font-bold mb-4 gap-4">Pradyunn Kale</h1>
               <div className="flex gap-4 mb-4">
@@ -93,7 +93,7 @@ export default function RootLayout({ children }) {
           </section>
 
 
-          <section id="experience" className="px-8 max-w-5xl mx-auto scroll-mt-24">
+          <section id="experience" className="px-8 max-w-5xl mx-auto scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Experience</h2>
             <p className="text-xl font-semibold mb-4">My technical experience whether it be through extracurriculars or industry.</p>
             <div>
@@ -118,7 +118,7 @@ export default function RootLayout({ children }) {
             </div>
           </section>
 
-          <section id="projects" className="px-8 max-w-5xl mx-auto scroll-mt-24">
+          <section id="projects" className="px-8 max-w-5xl mx-auto scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Projects</h2>
             <p className="text-xl font-semibold mb-4">These are some of the projects I&apos;m working on.</p>
             <div>
@@ -140,7 +140,7 @@ export default function RootLayout({ children }) {
             </div>
           </section>
 
-          <section id="awards" className="px-8 max-w-5xl mx-auto scroll-mt-24">
+          <section id="awards" className="px-8 max-w-5xl mx-auto scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Awards</h2>
             <p className="text-xl font-semibold mb-4">Here are some awards I&apos;ve received.</p>
             <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
@@ -151,7 +151,7 @@ export default function RootLayout({ children }) {
             </ul>
           </section>
 
-          <section id="contact" className="px-8 max-w-5xl mx-auto pb-24 scroll-mt-24">
+          <section id="contact" className="px-8 max-w-5xl mx-auto pb-24 scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Contact Me</h2>
             <p className="text-xl font-semibold mb-4">Feel free to reach out to me via email or connect on LinkedIn.</p>
             <ul className="space-y-2 text-gray-300 text-lg font-semibold">
