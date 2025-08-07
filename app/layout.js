@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         {/* Header */}
         <header className="fixed top-0 left-0 w-full px-8 py-4 z-50 flex justify-between items-center backdrop-blur bg-white/5 border-b border-white/10">
           <h1 className="text-xl font-bold transition-transform duration-200 hover:scale-110 hover:text-gray-300 mr-6"><button data-scroll="hero">Pradyunn Kale</button></h1>
-          <nav className="flex gap-6 text-sm font-medium">
+          <nav className="flex gap-6 text-sm font-medium overflow-x-auto scrollbar-hide whitespace-nowrap">
             <button data-scroll="experience" className="transition-transform duration-200 hover:scale-110 font-semibold hover:text-gray-300">Experience</button>
             <button data-scroll="projects" className="transition-transform duration-200 hover:scale-110 font-semibold hover:text-gray-300">Projects</button>
             <button data-scroll="awards" className="transition-transform duration-200 hover:scale-110 font-semibold hover:text-gray-300">Awards</button>
@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
           <section id="hero" className="px-8 max-w-5xl mx-auto scroll-mt-24" role="banner">
             <div className="flex flex-wrap items-center gap-4">
               <h1 className="text-5xl font-bold mb-4 gap-4">Pradyunn Kale</h1>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mb-4">
                 <a href="https://github.com/pradyunnkale" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-110">
                   <FaGithub size={50} />
                 </a>
@@ -98,10 +98,14 @@ export default function RootLayout({ children }) {
             <p className="text-xl font-semibold mb-4">My technical experience whether it be through extracurriculars or industry.</p>
             <div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-                <div className="flex gap-2">
-                  <h3 className="text-xl font-semibold">Avionics Engineer @ Purdue Space Program Liquid Propulsion</h3>
-                    <a href="https://github.com/pradyunnkale/copperhead_flight_sw" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115">
-                      <FaGithub size={25} />
+                <div className="flex gap-3 items-center">
+                  <h3 className="text-xl font-semibold">Avionics Engineer @ PSP Liquids</h3>
+                    <div className='flex gap-2'>
+                      <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
+                      <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C++</span>
+                    </div>
+                    <a href="https://github.com/pradyunnkale/copperhead_flight_sw" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
+                      <FaGithub size={30} />
                     </a>
                 </div>
                 <span className="text-md font-semibold text-gray-400">July 2025 – Present · West Lafayette, IN</span>
@@ -119,10 +123,11 @@ export default function RootLayout({ children }) {
             <p className="text-xl font-semibold mb-4">These are some of the projects I&apos;m working on.</p>
             <div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-                <div className="flex gap-2">
+                <div className="flex gap-3 items-center">
                   <h3 className="text-xl font-semibold">3D Holographic Display (ONGOING)</h3>
-                    <a href="https://github.com/pradyunnkale/3DHolographicDisplay" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115">
-                      <FaGithub size={25} />
+                    <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
+                    <a href="https://github.com/pradyunnkale/3DHolographicDisplay" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
+                      <FaGithub size={30} />
                     </a>
                 </div>
                 <span className="text-md font-semibold text-gray-400">August 2025 – Present · West Lafayette, IN</span>
