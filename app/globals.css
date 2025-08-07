@@ -7,12 +7,18 @@
   --font-inter-sans: 'Inter', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(1.1);
+  }
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -32,64 +38,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-}
-
-main > section:nth-child(odd) {
-  background-color: hsl(var(--background));
-  color: hsl(var(--foreground));
-}
-main > section:nth-child(even) {
+main > section {
   background-color: hsl(var(--primary--foreground));
   color: hsl(var(--primary));
-}
-
-.btn-primary {
-  @apply bg-[#c0ac87] hover:bg-[#b3a181] text-white font-bold px-6 py-3 rounded-xl transition inline-flex items-center px-4 py-2 transition-transform duration-200 hover:scale-110;
-}
-.btn-secondary {
-  @apply border border-[#c0ac87] text-[#cfb991] p-6 py-3 rounded-xl hover:bg-[#c0ac87] hover:text-white font-bold transition inline-flex items-center px-4 py-2 transition-transform duration-200 hover:scale-110;
-}
-
-.btn-icon{
-  @apply inline-flex items-center justify-center p-2 rounded-xl text-[#cfb991] hover:text-[#b3a181] text-xl w-11 h-auto transition-transform duration-200 hover:scale-105;
-}
-
-.btn-icon svg {
-  width: 2.75rem;   /* same as w-11 */
-  height: auto;
-  display: inline;
-}
-
-h {
-  color: hsl(var(--foreground));
-  font-family: var(--font-inter-tight), sans-serif;
 }
 
 p {
   color: hsl(var(--muted-foreground));
   font-family: var(--font-inter-sans), sans-serif;
-}
-
-html, body {
-  overflow-x: hidden;
 }
