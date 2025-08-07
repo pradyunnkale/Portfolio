@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
 
         {/* Header */}
         <header className="fixed top-0 left-0 w-full px-8 py-4 z-50 flex justify-between items-center backdrop-blur bg-white/5 border-b border-white/10">
-          <h1 className="text-xl font-bold transition-transform duration-200 hover:scale-110 hover:text-gray-300"><button data-scroll="hero">Pradyunn Kale</button></h1>
+          <h1 className="text-xl font-bold transition-transform duration-200 hover:scale-110 hover:text-gray-300 mr-6"><button data-scroll="hero">Pradyunn Kale</button></h1>
           <nav className="flex gap-6 text-sm font-medium">
             <button data-scroll="experience" className="transition-transform duration-200 hover:scale-110 font-semibold hover:text-gray-300">Experience</button>
             <button data-scroll="projects" className="transition-transform duration-200 hover:scale-110 font-semibold hover:text-gray-300">Projects</button>
@@ -67,8 +67,8 @@ export default function RootLayout({ children }) {
         {/* Main content */}
         <main className="pt-32 space-y-32">
           <section id="hero" className="px-8 max-w-5xl mx-auto scroll-mt-24" role="banner">
-            <div className="flex gap-4">
-              <h1 className="text-5xl font-bold mb-4">Pradyunn Kale</h1>
+            <div className="flex flex-wrap items-center gap-4">
+              <h1 className="text-5xl font-bold mb-4 gap-4">Pradyunn Kale</h1>
               <div className="flex gap-4">
                 <a href="https://github.com/pradyunnkale" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-110">
                   <FaGithub size={50} />
@@ -84,13 +84,12 @@ export default function RootLayout({ children }) {
             
             <p className="text-xl font-semibold mb-2">Embedded Software Engineer</p>
             <p className="text-base mb-4">Studying Electrical Engineering @ Purdue University</p>
-            <p className="text-lg font-semibold text-gray-300 flex items-center gap-4 mt-2">
-              <span>Languages:</span>
-              <span className="text-white">C </span> |
-              <span className="text-white">C++</span> |
-              <span className="text-white">Python</span> |
-              <span className="text-white italic">Rust (learning)</span>
-            </p>
+            <div className="flex flex-wrap gap-2 mt-4">
+              <span className="font-semibold text-lg w-full sm:w-auto">Languages:</span>
+              <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
+              <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C++</span>
+              <span className="px-2 py-1 bg-gray-800 rounded font-semibold">Python</span>
+            </div>
           </section>
 
 
