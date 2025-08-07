@@ -84,6 +84,13 @@ export default function RootLayout({ children }) {
             
             <p className="text-xl font-semibold mb-2">Embedded Software Engineer</p>
             <p className="text-base mb-4">Studying Electrical Engineering @ Purdue University</p>
+            <p className="text-lg font-semibold text-gray-300 flex items-center gap-4 mt-2">
+              <span>Languages:</span>
+              <span className="text-white">C </span> |
+              <span className="text-white">C++</span> |
+              <span className="text-white">Python</span> |
+              <span className="text-white italic">Rust (learning)</span>
+            </p>
           </section>
 
 
