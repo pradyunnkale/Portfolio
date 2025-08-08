@@ -95,7 +95,6 @@ export default function RootLayout({ children }) {
 
           <section id="experience" className="px-8 max-w-5xl mx-auto scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Experience</h2>
-            <p className="text-xl font-semibold mb-4">My technical experience whether it be through extracurriculars or industry.</p>
             <div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="flex gap-3 items-center">
@@ -120,7 +119,6 @@ export default function RootLayout({ children }) {
 
           <section id="projects" className="px-8 max-w-5xl mx-auto scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Projects</h2>
-            <p className="text-xl font-semibold mb-4">These are some of the projects I&apos;m working on.</p>
             <div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="flex gap-3 items-center">
@@ -142,7 +140,6 @@ export default function RootLayout({ children }) {
 
           <section id="awards" className="px-8 max-w-5xl mx-auto scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Awards</h2>
-            <p className="text-xl font-semibold mb-4">Here are some awards I&apos;ve received.</p>
             <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
               <li><strong>AP Scholar with Distinction (Awarded by CollegeBoard) </strong> — July 2025</li>
               <li><strong>CRLS Student Scholarship (Awarded by Harvard Extension School)</strong> — January 2025</li>
