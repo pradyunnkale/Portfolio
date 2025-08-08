@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
             </div>
             
             <p className="text-xl font-semibold mb-2">Embedded Software Engineer</p>
-            <p className="text-base mb-4">Studying Electrical Engineering @ Purdue University</p>
+            <p className="text-base mb-4">Electrical Engineering Student @ Purdue University</p>
             <div className="flex flex-wrap gap-2 mt-4">
               <span className="font-semibold text-lg w-full sm:w-auto">Languages:</span>
               <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
