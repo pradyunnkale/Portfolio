@@ -166,7 +166,7 @@ export default function RootLayout({ children }) {
             </div>
             <div className="video-container, mt-8 flex justify-center" style={{ border: 'none' }}>
               <iframe
-                src="https://www.youtube.com/embed/4jhMs9qXgZo"
+                src="https://www.youtube.com/embed/7DrmJ-hkEno"
                 width="840"
                 height="473"
                 title="Test video"
