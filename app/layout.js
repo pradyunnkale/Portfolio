@@ -1,7 +1,8 @@
 'use client';
+import Image from 'next/image'
 import { Inter_Tight, Inter } from 'next/font/google';
 import { useEffect, useRef } from 'react';
-import { FaLinkedin, FaGithub, FaFileAlt, FaYoutube } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFileAlt} from 'react-icons/fa';
 import './globals.css';
 
 const interTight = Inter_Tight({ variable: '--font-inter-tight', subsets: ['latin'] });
@@ -67,28 +68,41 @@ export default function RootLayout({ children }) {
         {/* Main content */}
         <main className="pt-32 space-y-32">
           <section id="hero" className="px-8 max-w-5xl mx-auto scroll-mt-32" role="banner">
-            <div className="flex flex-wrap items-center gap-4">
-              <h1 className="text-5xl font-bold mb-4 gap-4">Pradyunn Kale</h1>
-              <div className="flex gap-4 mb-4">
-                <a href="https://github.com/pradyunnkale" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-110">
-                  <FaGithub size={50} />
-                </a>
-                <a href="https://linkedin.com/in/pradyunnkale" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-110">
-                  <FaLinkedin size={50} />
-                </a>
-                <a href="/assets/Resume_Pradyunn Kale.pdf" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-110">
-                  <FaFileAlt size={50} />
-                </a>
+            <div className="flex flex-wrap gap-6">
+              <div className="w-42 h-42 rounded-full overflow-hidden">
+                <Image
+                  src="/assets/profile.jpeg"
+                  alt="Pradyunn Kale"
+                  width={256}
+                  height={256}
+                  className="object-cover w-full h-full"
+                />
               </div>
-            </div>
-            
-            <p className="text-xl font-semibold mb-2">Embedded Software Engineer</p>
-            <p className="text-base mb-4">Electrical Engineering Student @ Purdue University</p>
-            <div className="flex flex-wrap gap-2 mt-4">
-              <span className="font-semibold text-lg w-full sm:w-auto">Languages:</span>
-              <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
-              <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C++</span>
-              <span className="px-2 py-1 bg-gray-800 rounded font-semibold">Python</span>
+              <div className="flex flex-col">
+                <div className="flex flex-wrap items-center gap-4">
+                  <h1 className="text-5xl font-bold mb-4 gap-4">Pradyunn Kale</h1>
+                  <div className="flex gap-4 mb-4">
+                    <a href="https://github.com/pradyunnkale" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-110">
+                      <FaGithub size={50} />
+                    </a>
+                    <a href="https://linkedin.com/in/pradyunnkale" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-110">
+                      <FaLinkedin size={50} />
+                    </a>
+                    <a href="/assets/Resume_Pradyunn Kale.pdf" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-110">
+                      <FaFileAlt size={50} />
+                    </a>
+                  </div>
+                </div>
+                
+                <p className="text-xl font-semibold mb-2">Embedded Software Engineer</p>
+                <p className="text-base mb-4">Electrical Engineering Student @ Purdue University</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="font-semibold text-lg w-full sm:w-auto">Languages:</span>
+                  <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
+                  <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C++</span>
+                  <span className="px-2 py-1 bg-gray-800 rounded font-semibold">Python</span>
+                </div>
+              </div>
             </div>
           </section>
 
