@@ -1,7 +1,7 @@
 'use client';
 import { Inter_Tight, Inter } from 'next/font/google';
 import { useEffect, useRef } from 'react';
-import { FaLinkedin, FaGithub, FaFileAlt } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFileAlt, FaYoutube } from 'react-icons/fa';
 import './globals.css';
 
 const interTight = Inter_Tight({ variable: '--font-inter-tight', subsets: ['latin'] });
@@ -119,7 +119,7 @@ export default function RootLayout({ children }) {
 
           <section id="projects" className="px-8 max-w-5xl mx-auto scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Projects</h2>
-            <div>
+            <div className="mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="flex gap-3 items-center">
                   <h3 className="text-xl font-semibold">3D Holographic Display (ONGOING)</h3>
@@ -135,6 +135,30 @@ export default function RootLayout({ children }) {
                 <li>Developed and tuned PID control algorithms to maintain stable and accurate motor positioning</li>
                 <li>Programmed firmware for a Hall sensor to enable real-time position feedback and closed-loop control integration</li>
               </ul>
+            </div>
+            <div>
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                <div className="flex gap-3 items-center">
+                  <h3 className="text-xl font-semibold">Quick Driver Development Without Hardware Guide</h3>
+                  <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
+                </div>
+                <span className="text-md font-semibold text-gray-400">August 2025 · West Lafayette, IN</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
+                <li>Created a video detailing how to write drivers efficiently, even when you do not have access to hardware</li>
+                <li>Used this approach on my PSP Liquids and Holo Display projects, from datasheets to early HAL setup.</li>
+                <li>Shared three key tips: read the datasheet, figure out why this device, and keep comms abstracted until hardware&apos;s accessible.</li>
+              </ul>
+            </div>
+            <div className="video-container, mt-8 flex justify-center" style={{ border: 'none' }}>
+              <iframe
+                src="https://www.youtube.com/embed/4jhMs9qXgZo"
+                width="840"
+                height="473"
+                title="Test video"
+                allowFullScreen
+                style={{ border: 'none' }}
+              ></iframe>
             </div>
           </section>
 
