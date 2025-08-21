@@ -136,7 +136,24 @@ export default function RootLayout({ children }) {
             <div className="mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="flex gap-3 items-center">
-                  <h3 className="text-xl font-semibold">3D Holographic Display (ONGOING)</h3>
+                  <h3 className="text-xl font-semibold">Vibration Monitoring Signal Processing Library (ACTIVE)</h3>
+                    <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
+                    <a href="https://github.com/pradyunnkale/VibrationEngine" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
+                      <FaGithub size={30} />
+                    </a>
+                </div>
+                <span className="text-md font-semibold text-gray-400">August 2025 – Present · West Lafayette, IN</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
+                <li>Architected core signal data structures with smart memory management and ownership tracking for embedded systems</li>
+                <li>Implemented comprehensive API with bounds-checked sample access, validation routines, and error handling</li>
+                <li>Developed memory-safe buffer management system to prevent leaks in resource-constrained environments</li>
+              </ul>
+            </div>
+            <div className="mb-8">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                <div className="flex gap-3 items-center">
+                  <h3 className="text-xl font-semibold">3D Holographic Display (FIRMWARE COMPLETE)</h3>
                     <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
                     <a href="https://github.com/pradyunnkale/3DHolographicDisplay" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
                       <FaGithub size={30} />
