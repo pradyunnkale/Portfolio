@@ -109,13 +109,13 @@ export default function RootLayout({ children }) {
 
           <section id="experience" className="px-8 max-w-5xl mx-auto scroll-mt-32">
             <h2 className="text-4xl font-bold mb-4">Experience</h2>
-            <div>
+            <div className="mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="flex gap-3 items-center">
-                  <h3 className="text-xl font-semibold">Avionics Engineer @ PSP Liquids</h3>
+                  <h3 className="text-xl font-semibold">Avionics Engineer @ Purdue Space Program Liquids</h3>
                     <div className='flex gap-2'>
-                      <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
                       <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C++</span>
+                      <span className="px-2 py-1 bg-gray-800 rounded font-semibold">CMake</span>
                     </div>
                     <a href="https://github.com/pradyunnkale/copperhead_flight_sw" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
                       <FaGithub size={30} />
@@ -124,11 +124,45 @@ export default function RootLayout({ children }) {
                 <span className="text-md font-semibold text-gray-400">July 2025 – Present · West Lafayette, IN</span>
               </div>
               <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
-                <li>Developed bare-metal C drivers for ADS1158 ADC, Ethernet PHY, and magnetometer on custom embedded hardware</li>
-                <li>Interfaced with SPI and I²C peripherals using register-level programming guided by technical datasheets</li>
-                <li>Validated communication protocols and driver functionality with oscilloscope and logic analyzer</li>
+                <li>Developed drivers for ADC, Ethernet PHY, and Magnetometer from scratch using C/C++</li>
+                <li>Automating CI/CD pipeline for driver firmware testing using CMake</li>
+                <li>Planned configuration FreeRTOS ensuring peripheral detection and real-time task scheduling</li>
+                <li>Planned validation driver firmware using HITL and HOOTL simulations against MATLAB/Simulink missions</li>
               </ul>
             </div>
+            <div className="mb-8">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                <div className="flex gap-3 items-center">
+                  <h3 className="text-xl font-semibold">Embedded Systems Engineer @ Purdue Solar Racing</h3>
+                    <div className='flex gap-2'>
+                      <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C++</span>
+                    </div>
+                </div>
+                <span className="text-md font-semibold text-gray-400">September 2025 – Present · West Lafayette, IN</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
+                <li>Developing a Raspberry Pi Pico to CAN controller library from scratch in C++</li>
+                <li>Planning implementation of wireless communication system between racing car and support car for real-time data transmission</li>
+                <li>Planning implementation of an SPI GUI on the steering wheel for real-time telemetry and control visualization</li>
+              </ul>
+            </div>
+            <div className="mb-8">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                <div className="flex gap-3 items-center">
+                  <h3 className="text-xl font-semibold">Firmware Engineer @ ECELabs.io (VIP @ Purdue)</h3>
+                    <div className='flex gap-2'>
+                      <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C++</span>
+                    </div>
+                </div>
+                <span className="text-md font-semibold text-gray-400">September 2025 – Present · West Lafayette, IN</span>
+              </div>
+              <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
+                <li>Developing firmware for lab boards used by electrical engineering students for assignments</li>
+                <li>Implementing MAX7301 library for high frequency communication to I/O expanders via SPI</li>
+                <li>Planning development of firmware enabling USB-based configuration of physical FPGA hardware</li>
+              </ul>
+            </div>
+            
           </section>
 
           <section id="projects" className="px-8 max-w-5xl mx-auto scroll-mt-32">
@@ -136,35 +170,35 @@ export default function RootLayout({ children }) {
             <div className="mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="flex gap-3 items-center">
-                  <h3 className="text-xl font-semibold">Vibration Monitoring Signal Processing Library (ACTIVE)</h3>
+                  <h3 className="text-xl font-semibold">Bare Metal Arduino Repository</h3>
                     <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
-                    <a href="https://github.com/pradyunnkale/VibrationEngine" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
+                    <a href="https://github.com/pradyunnkale/baremetalarduino" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
                       <FaGithub size={30} />
                     </a>
                 </div>
-                <span className="text-md font-semibold text-gray-400">August 2025 – Present · West Lafayette, IN</span>
+                <span className="text-md font-semibold text-gray-400">September 2025 – Present · West Lafayette, IN</span>
               </div>
               <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
-                <li>Architected core signal data structures with smart memory management and ownership tracking for embedded systems</li>
-                <li>Implemented comprehensive API with bounds-checked sample access, validation routines, and error handling</li>
-                <li>Developed memory-safe buffer management system to prevent leaks in resource-constrained environments</li>
+                <li>Contains my progression with bare metal programming, writing directly to registers</li>
+                <li>Right now, there is only a blink project in there, my first ever results with bare metal</li>
+                <li>More projects on the way, I plan on going up to controlling 7 segement display through register manipulation</li>
               </ul>
             </div>
             <div className="mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
                 <div className="flex gap-3 items-center">
-                  <h3 className="text-xl font-semibold">3D Holographic Display (FIRMWARE COMPLETE)</h3>
-                    <span className="px-2 py-1 bg-gray-800 rounded font-semibold">C</span>
-                    <a href="https://github.com/pradyunnkale/3DHolographicDisplay" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
+                  <h3 className="text-xl font-semibold">Phone Cubby Carousel</h3>
+                    <span className="px-2 py-1 bg-gray-800 rounded font-semibold">Arduino C++</span>
+                    <a href="https://github.com/pradyunnkale/PhoneCubbyCarousel" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition-transform duration-200 hover:scale-115 flex items-center">
                       <FaGithub size={30} />
                     </a>
                 </div>
                 <span className="text-md font-semibold text-gray-400">August 2025 – Present · West Lafayette, IN</span>
               </div>
               <ul className="list-disc list-inside text-gray-300 text-sm sm:text-base font-semibold space-y-2 mt-2">
-                <li>Developed motor control firmware, including programming an electronic speed controller (ESC) for precise movement</li>
-                <li>Developed and tuned PID control algorithms to maintain stable and accurate motor positioning</li>
-                <li>Programmed firmware for a Hall sensor to enable real-time position feedback and closed-loop control integration</li>
+                <li>Developed authentication system requiring usernames and passwords for each device, enhancing security</li>
+                <li>Designed user-friendly interface, simplifying phone storage and retrieval for students</li>
+                <li>Enhanced classroom phone management, by combining security, automation, and charging into a single system</li>
               </ul>
             </div>
             <div>
