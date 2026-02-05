@@ -42,7 +42,6 @@ main > section {
 }
 
 p {
-  color: hsl(var(--muted-foreground));
   font-family: var(--font-inter-sans), sans-serif;
 }
 
