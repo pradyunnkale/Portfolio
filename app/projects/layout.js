@@ -14,8 +14,8 @@ export default function ProjectLayout({ children }) {
   return (
     <>
       <header className="fixed top-0 left-0 w-full px-8 py-4 z-50 flex justify-between items-center backdrop-blur bg-white/5 border-b border-white/10">
-        <h1 className="text-xl">
-          <Link href="/" className="font-bold hover:text-gray-300">Pradyunn Kale</Link>
+        <h1 className="text-xl"> 
+          <Link href="/" className="font-bold transition-transform duration-200 hover:scale-110 hover:text-gray-300 inline-block">Pradyunn Kale</Link>
         </h1>
         <nav className="flex gap-6 text-sm whitespace-nowrap">
           <Link href="/projects/psplfdcrocket" className={linkClass('/projects/psplfdcrocket')}>Sub-Scale Rocket</Link>
