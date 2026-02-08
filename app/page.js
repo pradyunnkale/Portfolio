@@ -73,10 +73,13 @@ export default function HomePage() {
               <span className="font-normal text-justify text-lg">
                 I am a current undergraduate student at Purdue University studying Computer Engineering. 
                 I have an interest in Embedded Systems (low-level software and hardware) and Guidance, Navigation, and Control (GNC) and simulation. 
+                I also plan on gettting a PhD, most likely in Physics.
                 I have experience using multiple different microcontrollers (STM32, ESP32, Raspberry Pi, etc.) and different chip architechtures (ARM, RISC-V).
                 In addition to working with microcontrollers, I have done control system simulation with MATLAB and Simulink, 
                 injecting noise into my system to make sure my controller is robust no matter the conditions. I utilize all of these skills and more as the Flight Dynamics
-                & Controls lead on the liquid-fueled rocketry team at Purdue. As the lead of FD&C, I am leading the development of a sub-scale version of our current main rocket (Copperhead)
+                & Controls lead on the liquid-fueled rocketry team at Purdue.
+                <br/><br/>
+                As the lead of FD&C, I am leading the development of a sub-scale version of our current main rocket (Copperhead)
                 and using that to validate our custom 6DoF model on MATLAB, in addition to doing some state estimation and active controls projects.
                 A lot of the technical skills I have, I have learned from doing these teams and doing projects. More details below.
               </span>
