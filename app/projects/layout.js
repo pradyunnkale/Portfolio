@@ -1,27 +1,27 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import '../globals.css';
 
 export default function ProjectLayout({ children }) {
   const pathname = usePathname();
-
-  const linkClass = (href) =>
-    `transition-transform duration-200 hover:scale-110 hover:text-gray-300 ${
-      pathname === href ? 'font-extrabold' : 'font-medium'
-    }`;
+  const projects = [
+    { href: '/projects/adpll', label: 'ADPLL' },
+    { href: '/projects/systolic-array', label: 'Systolic Array' },
+  ];
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full px-8 py-4 z-50 flex justify-between items-center backdrop-blur bg-white/5 border-b border-white/10">
-        <h1 className="text-xl"> 
-          <Link href="/" className="font-bold transition-transform duration-200 hover:scale-110 hover:text-gray-300 inline-block">Pradyunn Kale</Link>
-        </h1>
-        <nav className="flex gap-6 text-sm whitespace-nowrap">
-          <Link href="/projects/psplfdcrocket" className={linkClass('/projects/psplfdcrocket')}>Sub-Scale Rocket</Link>
-          <Link href="/projects/pspl6dof" className={linkClass('/projects/pspl6dof')}>6-DoF Model</Link>
-          <Link href="/projects/rwip" className={linkClass('/projects/rwip')}>RWIP</Link>
-        </nav>
+      <header className="max-w-3xl mx-auto px-6 pt-8 sm:pt-12">
+        <div className="flex flex-wrap items-center justify-between gap-5 border-b border-white/15 pb-5">
+          <Link href="/" className="font-medium transition-colors hover:text-gray-300">Pradyunn Kale</Link>
+          <nav aria-label="Projects" className="flex gap-5 text-sm">
+            {projects.map((project) => (
+              <Link key={project.href} href={project.href} aria-current={pathname === project.href ? 'page' : undefined} className={`font-medium transition-colors hover:text-gray-300 ${pathname === project.href ? 'text-white' : 'text-gray-500'}`}>
+                {project.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </header>
       {children}
     </>
