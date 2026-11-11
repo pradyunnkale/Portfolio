@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+  --background: #000000;
+  --foreground: #ffffff;
   --font-inter-tight: 'Inter Tight', sans-serif;
   --font-inter-sans: 'Inter', sans-serif;
 }
@@ -18,12 +19,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   font-family: Inter Tight, Inter;
